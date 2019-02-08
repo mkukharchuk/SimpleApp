@@ -4,8 +4,11 @@
   "description": "Simple app with react 16.7/ redux/-saga/-undo /flow types/react-touter",
   "main": "webpack.config.js",
   "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "@material-ui/icons": "^3.0.2",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
+    "react-router-dom": "^4.3.1",
     "redux": "^4.0.1",
     "redux-saga": "^1.0.1",
     "redux-undo": "^0.6.1"
@@ -15,7 +18,6 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
-    "@babel/preset-stage-2": "^7.0.0",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "eslint": "^5.13.0",
@@ -26,10 +28,11 @@
     "eslint-plugin-react": "^7.12.4",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.29.3",
-    "webpack-cli": "^3.2.3"
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
   },
   "scripts": {
-    "start": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open --hot",
     "build": "webpack --mode production"
   },
   "repository": {

@@ -10,16 +10,10 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.js$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        use: 'babel-loader',
       },
-      {
-        test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: ['babel-eslint', 'eslint-loader'],
-      },
-
     ],
   },
   plugins: [htmlPlugin],
